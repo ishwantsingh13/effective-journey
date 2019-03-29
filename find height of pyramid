@@ -1,0 +1,11 @@
+blocks = int(input("Enter the number of blocks: "))
+if blocks==0:
+    print("no blocks to build pyramid ")
+else:
+    i=0
+    while blocks>=i:
+        i+=1
+        blocks-=i
+        if blocks<=i:
+            break
+print("The height of the pyramid:", i)
